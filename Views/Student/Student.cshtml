@@ -1,0 +1,25 @@
+﻿@model IEnumerable<mvcIEnumerable.Models.Amity>
+
+@{ 
+<div class="table">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Sl.No.</th>
+                <th>Sl Enroll</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var s in Model)
+            {
+                <tr>
+                    <td>@s.sId</td>
+                    <td>@s.sEnroll</td>
+                    <td>@s.sName</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+}
