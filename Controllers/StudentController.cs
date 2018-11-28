@@ -13,6 +13,7 @@ namespace mvcIEnumerable.Controllers
         public ActionResult Student()
         {
             // AmityDAl Class
+            Amity ant = new Amity();
             AmityDAL student = new AmityDAL();
             IEnumerable<Amity> strList = student.getStudent();
 
