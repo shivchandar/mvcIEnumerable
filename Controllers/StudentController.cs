@@ -12,7 +12,7 @@ namespace mvcIEnumerable.Controllers
         // GET: Student
         public ActionResult Student()
         {
-
+            // AmityDAl Class
             AmityDAL student = new AmityDAL();
             IEnumerable<Amity> strList = student.getStudent();
 
